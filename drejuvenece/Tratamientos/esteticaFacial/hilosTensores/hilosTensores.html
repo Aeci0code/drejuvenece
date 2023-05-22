@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilos Tensores</title>
+    <link rel="shorcut icon" href="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_Def.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        .layoutContainer {
+            width: 98%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            column-gap: 120px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .boxContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 1fr 40px 1fr;
+            grid-template-rows: repeat(4 1fr); 
+            row-gap: 20px;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boxContainer li {
+            color: rgb(44, 0, 110);
+        }
+
+        .boxContainer span {
+            color: rgb(44, 0, 110);
+        }
+
+        .parrafo {
+            line-height: 2;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            text-align: justify;
+            
+        }
+
+        #preguntas {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(15 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        #preguntas h3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+
+        .parrafo h3 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo h4 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo ion-icon {
+            color: rgb(44, 0, 110);
+
+            font-size: 30px;
+        }
+
+        .banerContainer{
+            display: grid;
+            grid-template-rows: 150px 800px 400px 480px;
+        }
+
+        .banerContainer h2 {
+            background: hotpink;
+            text-align: center;
+            padding-top: 60px;
+            color: white;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .banerContainer img {
+            width: 400px;
+            height: 800px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .otrosTratamientosContainer {
+        width: 100%;
+        height: 300px;
+        background: white;
+        margin-top: 40px;
+        text-align: center;
+         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        
+
+        }
+
+        .otrosTratamientosContainer > h4 {
+        background: hotpink;
+        color: #fff;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        .otrosTratamientosContainer > li {
+            background-color: papayawhip;
+            color: #333;
+            padding: 20px;
+        }
+
+        .otrosTratamientosContainer > li:hover {
+            background: rgb(255, 250, 242);
+            font-size: large;
+            transition: 1sg;
+        }
+
+        .boton {
+            position: fixed; 
+            right: 0; 
+            width: 200px; 
+            height: 50px; 
+            background: rgb(138, 43, 226, 0.9); 
+            z-index: 1;
+            top: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton:hover {
+            background: rgb(44, 109, 137);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(62, 16, 100, 0.8);
+        }
+        
+        .listA {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+        }
+
+        .listA span{
+            padding-top: 3px;
+        }
+
+        .listA li {
+            font-weight: normal;
+        }
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html"><img class="logoDrejuvenece" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Clínica.png" alt="Logo Clinica Drejuvenece"></a>
+        <div class="leftbarContainer">
+            
+            <a class="shopping" href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>        
+            </a>
+            <a class="registro" href="#"> 
+                <h5>REGISTRATE</h5>
+             </a>
+            <a class="acceso" href="https://drejuvenece.dentalink.cl/sessions/login"> 
+                <span class="material-symbols-outlined">lock_open</span> 
+                <h5>ACCESO DOCTORES</h5> 
+            </a>
+        </div>
+     </header>                
+    
+    <div class="navBackground">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html">Inicio</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html">Tratamientos</a>
+                    <ul class="submenu">
+                        <li class="submenuF"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#facialTag">Estética Facial</a>
+                            <ul class="tratamientosF">
+                                <li> <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html">Toxina Botulinica</a> </li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html">Ácido hialurónico</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/PRP/prp.html">Plasma rico en plaquetas</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html">Hilos Tensores</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html">Mesoterapia</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html">Jato Plasma</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenuC"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#corporalTag">Estetica Corporla</a>
+                            <ul class="tratamientosC">
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipolisis</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/hondasChoque/hondaschoque.html">Hondas de choque</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html">Electroporación</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Odontologia general</a></li>
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación triláser</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Blog/blog.html">Blog</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/antes&Despues/workingProgress.html">Antes y despues</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Nuestra Clínica/nuestraClínica.html">Nuestra clínica</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html#contactoLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+     <div class="layoutContainer">
+
+        <div class="textContainer">
+
+            <div class="boxContainer"> 
+                <span class="material-symbols-outlined">
+                    syringe
+                    </span>
+                <li>Requiere anestesia local</li>
+                <span class="material-symbols-outlined">
+                    schedule
+                    </span>
+                <li>Una hora de intervencion en promedio</li>
+                <span class="material-symbols-outlined">
+                    auto_fix
+                    </span>
+                <li>Efectos inmediatos</li>
+                <span class="material-symbols-outlined">
+                    local_hospital
+                    </span>
+                <li>No requiere hospitalización</li>
+                <span class="material-symbols-outlined">
+                    chair
+                    </span>
+                <li>No requiere reposo</li>
+                <span class="material-symbols-outlined">
+                    self_care
+                    </span>
+                <li>Resultados temporales</li>
+            </div>
+
+            <a class="boton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div  style="color: white;">Agenda Online</div></a>
+
+            <div class="parrafo">
+                <h3>¿Qué son los hilos tensores?</h3>
+                <p>Es un tratamiento de rejuvenecimiento poco invasivo que ofrece un efecto de lifting sin necesidad de cirugía. Se realiza con unos hilos hechos de materiales completamente compatibles para el organismo, que se insertan bajo la piel con agujas muy finas. Su efecto es inmediato y puede realizarse en todo el cuerpo, aunque es un tratamiento comúnmente usado en el rostro, puesto que es donde más se hacen notar los efectos de la edad.</p>
+                <br>
+                <p>Los hilos se insertan bajo la piel con una fina aguja y, al no requerir cirugía ni incisiones, no hay cicatriz ni puntos. El tratamiento de hilos tensores se realiza con el fin de rejuvenecer la piel y conseguir tensarla, para reafirmar el aspecto de la zona a tratar y eliminar diversos tipos de arrugas, manteniendo un aspecto natural y evitando expresiones forzadas, o excesiva inexpresividad. Es un tratamiento muy común en las zonas faciales o del cuello, que son propensas a arrugas o flacidez con el paso del tiempo, aunque se puede usar también para recuperar un aspecto más terso y de mayor densidad de la piel en otras zonas del cuerpo. </p>
+                <br>
+                <p>En el tratamiento se aplica anestesia local en el paciente, y es un procedimiento que se puede realizar en consulta, no es necesario recurrir a quirófanos. La cantidad de hilos usados depende de la zona y del estado de lo que se desea corregir, suele oscilar entre los 6 y los 40, y alrededor de los hilos se estimula la segregación de colágeno y elastina, lo que potencia el efecto lifting de la propia piel, mejora su densidad y así combate la flacidez eficazmente. Estos son los tipos más comunes:</p>    
+                <br>
+                <ul class="listA">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <h4>Hilos tensores monofilamento: <li>De grosor fino, son comúnmente usados en tratamientos en las zonas de la mandíbula y la papada. A pesar de ello también es posible usarlos en tratamientos del resto de la cara.</li></h4>
+                    
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <h4>Hilos tensores multifilamento.<li>De mayor grosor que los anteriores, constan de numerosos hilos y eso ayuda a la piel a rellenarse y a mostrar un aspecto de mayor densidad y menor flacidez sin alejarse del aspecto y expresividad naturales del paciente. </li></h4>
+                    
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <h4>Hilos tensores espiculados.<li>Son hilos dentados, con pequeñas espículas, y de mayor grosor que los monofilamento, ello les permite un mayor agarre a la piel y otorgar una mayor tensión que favorece el efecto lifting. Estos hilos permiten a la piel obtener un aspecto más terso gracias a que brindan una mayor densidad a los tejidos de la zona . Es común usar estos hilos para tratar zonas amplias, como mejillas o cuello, que pueden descolgarse o sufrir una flacidez pronunciada.</li> </h4>
+                    
+
+                </ul>
+            </div>
+
+            <div class="parrafo">    
+                <h3>¿Cómo saber si soy candidato al tratamiento?</h3>
+                <p>Los candidatos ideales para someterse al tratamiento de hilos tensores son hombres y mujeres entre 35 y 65 años, que deseen rejuvenecer su aspecto sin recurrir a procesos quirúrgicos. Pacientes más jóvenes con mejilla y frente comba por debilitamiento muscular también son elegibles.
+                </p>
+            </div>
+
+            <div class="parrafo">
+                <h3>¿Cómo se realiza el tratamiento de hilos tensores?</h3>
+                <p>Para realizar el tratamiento, se introducen los hilos uno a uno con una fina aguja tras realizar una diminuta punción, totalmente indolora para el paciente. La cantidad de hilos dependerá del estado de la zona a tratar. Asimismo, se estimula la segregación de colágeno de la piel para mantener el efecto lifting de forma natural, gracias a eso el aspecto de la persona sigue siendo mejor incluso después de que los efectos del tratamiento se hayan diluido que antes de someterse al procedimiento.</p>
+                <br>
+                <h3>Resultados de los hilos tensores</h3>
+                <p>Los resultados son un aspecto rejuvenecido y natural que se puede apreciar de forma inmediata. El rostro pierde flacidez y se vuelve más terso, y gracias a potenciar la segregación de colágeno la calidad de la piel mejora, siendo menos fina y más fuerte.</p>
+                <br>
+                <p>No suele haber efectos secundarios, salvo pequeñas inflamaciones o hematomas que pueden aparecer, aunque desaparecen a los pocos días. Los resultados del tratamiento pueden durar más o menos dependiendo de la composición de los hilos, pero se estima que pueden durar hasta año y medio, tras el cual se pueden hacer retoques para alargar los resultados en el tiempo.</p>
+                <br>
+                <h3>¿Cómo es la recuperación de los hilos tensores?</h3>
+                <p>No es aconsejable lavarse la zona tratada hasta pasadas 12 horas tras la operación. En las 24 horas siguientes al tratamiento, el paciente tampoco podrá realizar ejercicio físico y deberá evitar la exposición a los rayos ultravioleta. Puede haber molestias ligeras, para lo que es aconsejable aplicar compresas frías sobre la zona tratada y, tal vez, tomar analgésicos o paracetamol. También se recomienda usar un cojín cervical para evitar presión sobre la zona tratada al dormir en los 2 o 3 días posteriores al tratamiento. </p>
+                <br>
+                <p>Es aconsejable tomar suplementos alimenticios por vía oral, el especialista indicará de forma personalizada los suplementos indicados para cualquier paciente.  </p>
+                <br>
+                <h3>Riesgos y posibles efectos secundarios</h3>
+                <p>No hay grandes riesgos ni posibles efectos secundarios en el tratamiento de hilos tensores, ya que es poco invasivo y, gracias a que los materiales son reabsorbibles y compatibles con el organismo, no causa alergias ni rechazo en el cuerpo. Es posible que la zona tratada muestre hematomas en los días siguientes, de hecho es una buena señal. También puede darse que el área esté algo hinchada, pero es importante en esos casos seguir las pautas marcadas por el especialista y tomar los medicamentos convenientes.</p>
+            </div>
+
+                <div class="parrafo" id="preguntas">
+                    
+                    <h3 style="padding-left: 40px;">Preguntas frecuentes</h3>
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿La duración de los hilos tensores en glúteos es indefinida pero que obviamente con la edad, los efectos irán envejeciendo?</h4>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <li>La duración de los hilos, tanto en glúteos como a nivel facial, va a depender del material del que estén hechos, pueden ser hilos permanentes no reabsorbieres, como los de silicona u otros materiales plásticos, o bien reabsorbieres de PDO o de poliláctico. Los permanentes van a serlo en cualquier parte del cuerpo, y los temporales, en zonas como el glúteo que tiene mucho estrés mecánico tendrá duraciones más cortas que en la cara.
+                    </li>    
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>Si al ponerse hilos tensores para el surco nasogeniano, sale un bulto y se nota el hilo médico, ¿qué hay que hacer?</h4> 
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>Si los hilos son de PDO, con la inyección en la zona de suero fisilógico, conseguiremos que se deshagan en pocos días. Si son de poliláctico, el problema es peor, porque con el tiempo se va, pero cuesta más. Puede ser que están inyectados muy superficialmente.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Los hilos tensores pueden provocar alergias?  </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>         
+                    <li>ualquier producto que introduzcamos en nuestro organismo puede causar una reacción inmunológica propia de cada paciente.
+                    </li>
+                </div>
+            
+            
+            </div>
+     
+        <div class="banerContainer">
+            <h2>HILOS TENSORES</h2>
+            <img class="banerImg" src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/toxPic.png" alt="mujer del baner">
+            <ul class="otrosTratamientosContainer">
+                <h4>Otros tratamientos</h4>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis">Criolipólisis</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación de Rebaje</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Carillas</a></li>
+            </ul>
+            <iframe src="https://www.instagram.com/d.rejuvenece/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" style=" box-shadow: 0px 1px 10px rgba(0,0,0,0.2);"></iframe>
+        </div>
+     </div>
+
+    
+    <footer>
+        <div class="footer_container">
+
+            <img class="Logo_footer" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_BLANCO.png" alt="Logo Drejuvenece">
+            
+            <ul class="contact">
+                <h3 class="titulo"> CONTACTO</h3>
+                <li> Telefono/ whataspp: +569 9958 6889</li>
+                <li> Correo electrónico: drejuvenece@gmail.com</li>
+                <li> Dirección: javiera carrera  1655 - Temuco</li>
+            </ul>
+
+            <ul class="tratamientos">
+                <h3 class="titulo">TRATAMIENTOS FRECUENTES</h3>
+                
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><h4>ESTÉTICA DENTAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Carillas</li></a> 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Blanqueamiento</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Coronas</li></a>
+                 
+                <a href=""><h4>ESTÉTICA FACIAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html"><li>Toxina Botulinica</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html"><li>Ácido hilurónico</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html"><li>Hilos tensores</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html"><li>Mesoterapia</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html"><li>Jato plasma</li></a>
+                 
+                <a href=""><h4>ESTÉTICA CORPORAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Electroporación</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Ondas de choque</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html"><li>Criolipolisis</li></a>
+                 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><h4>DEPILACIÓN LÁSER</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rostro</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Pierna</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rebaje</li></a>
+            </ul>
+            
+            <ul class="RRSS">
+                <h3 class="titulo">RRSS</h3>
+                <a href="https://www.facebook.com/drejuvenece.tco">
+                    <li>Facebook</li> 
+                </a>
+                
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+
+                <a href="https://www.instagram.com/d.rejuvenece/">
+                    <li>instagram</li>
+                </a>
+                
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </ul>
+            <ul class="node">
+                <li>Desarrollado por</li>
+                <a href=""><img src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Página 2.png" alt="node"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="flotanteBoton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento">
+            
+        <span class="material-symbols-outlined">
+            view_agenda
+            </span>
+        <div class="contentBoton">AGENDA VIRTUAL</div>
+    </a>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+
+</html>

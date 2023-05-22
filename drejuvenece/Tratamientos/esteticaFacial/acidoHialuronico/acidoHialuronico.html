@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ácido Hialurónico</title>
+    <link rel="shorcut icon" href="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_Def.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        .layoutContainer {
+            width: 98%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            column-gap: 120px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .boxContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 1fr 40px 1fr;
+            grid-template-rows: repeat(4 1fr); 
+            row-gap: 20px;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boxContainer li {
+            color: rgb(44, 0, 110);
+        }
+
+        .boxContainer span {
+            color: rgb(44, 0, 110);
+        }
+
+        .parrafo {
+            line-height: 2;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            text-align: justify;
+            
+        }
+
+        .listPropiedades{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(4 1fr);
+            
+        }
+
+        .listVentajas{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(3 1fr);
+        }
+
+        .listTipos{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(2 1fr);
+        }
+
+        #preguntas {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(15 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        #preguntas h3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+
+        .parrafo h3 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo h4 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo ion-icon {
+            color: rgb(44, 0, 110);
+
+            font-size: 30px;
+        }
+
+        .banerContainer{
+            display: grid;
+            grid-template-rows: 150px 800px 400px 480px;
+        }
+
+        .banerContainer h2 {
+            background: hotpink;
+            text-align: center;
+            padding-top: 60px;
+            color: white;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .banerContainer img {
+            width: 400px;
+            height: 800px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .otrosTratamientosContainer {
+        width: 100%;
+        height: 300px;
+        background: white;
+        margin-top: 40px;
+        text-align: center;
+         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        
+
+        }
+
+        .otrosTratamientosContainer > h4 {
+        background: hotpink;
+        color: #fff;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        .otrosTratamientosContainer > li {
+            background-color: papayawhip;
+            color: #333;
+            padding: 20px;
+        }
+
+        .otrosTratamientosContainer > li:hover {
+            background: rgb(255, 250, 242);
+            font-size: large;
+            transition: 1sg;
+        }
+
+        .boton {
+            position: fixed; 
+            right: 0; 
+            width: 200px; 
+            height: 50px; 
+            background: rgb(138, 43, 226, 0.9); 
+            z-index: 1;
+            top: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton:hover {
+            background: rgb(44, 109, 137);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(62, 16, 100, 0.8);
+        }
+
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html"><img class="logoDrejuvenece" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Clínica.png" alt="Logo Clinica Drejuvenece"></a>
+        <div class="leftbarContainer">
+            
+            <a class="shopping" href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>        
+            </a>
+            <a class="registro" href="#"> 
+                <h5>REGISTRATE</h5>
+             </a>
+            <a class="acceso" href="https://drejuvenece.dentalink.cl/sessions/login"> 
+                <span class="material-symbols-outlined">lock_open</span> 
+                <h5>ACCESO DOCTORES</h5> 
+            </a>
+        </div>
+     </header>                
+    
+    <div class="navBackground">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html">Inicio</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html">Tratamientos</a>
+                    <ul class="submenu">
+                        <li class="submenuF"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#facialTag">Estética Facial</a>
+                            <ul class="tratamientosF">
+                                <li> <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html">Toxina Botulinica</a> </li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html">Ácido hialurónico</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/PRP/prp.html">Plasma rico en plaquetas</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html">Hilos Tensores</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html">Mesoterapia</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html">Jato Plasma</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenuC"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#corporalTag">Estetica Corporla</a>
+                            <ul class="tratamientosC">
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipolisis</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/hondasChoque/hondaschoque.html">Hondas de choque</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html">Electroporación</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Odontologia general</a></li>
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación triláser</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Blog/blog.html">Blog</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/antes&Despues/workingProgress.html">Antes y despues</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Nuestra Clínica/nuestraClínica.html">Nuestra clínica</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html#contactoLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+     <div class="layoutContainer">
+
+        <div class="textContainer">
+
+            <div class="boxContainer"> 
+                <span class="material-symbols-outlined">
+                    syringe
+                    </span>
+                <li>Solo requiere antestecia local</li>
+                <span class="material-symbols-outlined">
+                    schedule
+                    </span>
+                <li>Menos de una hora de intervención</li>
+                <span class="material-symbols-outlined">
+                    auto_fix
+                    </span>
+                <li>Efectos visibles despues de una semana</li>
+                <span class="material-symbols-outlined">
+                    local_hospital
+                    </span>
+                <li>No requiere hospitalización</li>
+                <span class="material-symbols-outlined">
+                    chair
+                    </span>
+                <li>No requiere reposo</li>
+                <span class="material-symbols-outlined">
+                    self_care
+                    </span>
+                <li>Resultados temporales</li>
+            </div>
+
+            <a class="boton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div  style="color: white;">Agenda Online</div></a>
+
+            <div class="parrafo">
+                <h3>¿Qué es el ácido hialurónico?</h3>
+                <p>El ácido hialurónico ha adquirido un papel cada vez más importante en los tratamientos inyectables y los no invasivos en medicina estética, especialmente en la última década. De hecho, su uso con fines estéticos ha aumentado considerablemente en los últimos años</p>
+                <br>
+                <p>Es una proteína que existe de forma natural en nuestro cuerpo, especialmente en la dermis. También lo podemos encontrar en cartílagos, articulaciones y fibras musculares. Al ser una sustancia que se encuentra en el interior de nuestros tejidos, no es necesario que el profesional realice pruebas de alergia antes de su administración. Además, el cuerpo no lo puede rechazar.</p>
+                <br>
+                <p>Sus propiedades son:</p>
+                <br>
+                <ul class="listPropiedades">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <li>Reabsorbibles</li>
+
+                    <span class="material-symbols-outlined">
+                            arrow_circle_right
+                            </span>
+                    <li>Viscoelásticos</li>
+
+                    <span class="material-symbols-outlined">
+                                arrow_circle_right
+                                </span>
+                    <li>Biocompatibles</li>
+
+                    <span class="material-symbols-outlined">
+                                    arrow_circle_right
+                                    </span>
+                    <li>No inmunogénicos</li>
+                </ul>
+                <br>
+                <p>Esta proteína tiene una gran capacidad de retener agua, por lo que le ofrece a la piel humectación y firmeza. Con el paso de los años vamos perdiendo la capacidad de producirla, por lo tanto, la piel no retiene agua de forma tan eficiente como en la juventud. Esto provocará una pérdida de volumen de la piel y como consecuencia, la aparición de arrugas.</p>
+                <br>
+                <p>En medicina estética, el tratamiento con AH se utiliza para su función de relleno e hidratación, lo que permite rellenar las arrugas faciales y aumentar el volumen de ciertas áreas de la cara o el cuerpo.</p>
+                <br>
+                <p>El efecto de relleno obtenido por la infiltración se debe a una de las principales propiedades de esta sustancia, su resistencia y capacidad de retención. Es una de las sustancias más demandadas para tratar la piel porque los efectos son inmediatos y visibles.</p>
+            </div>
+
+            <div class="parrafo">
+                <h3>Beneficios y usos del ácido hialurónico</h3>
+                <p>El AH tiene un amplio espectro de intervención. Sus principales usos son múltiples y van desde la corrección de arrugas y rejuvenecimiento, el reequilibrio de la cara y sus volúmenes. Sus principales ventajas son:
+                </p>
+                <br>
+                <ul class="listVentajas">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <li>Resultados inmediatos</li>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <li>No requiere cirugía solo anestesia leve en el lugar de la inyección</li>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+                    <li>Permite seguir con las actividades diarias normales</li>
+                </ul>
+                <br>
+                <p>Según los efectos que se quieran conseguir, existen 2 tipos:</p>
+                <br>
+                <ul class="listTipos">
+                    <span class="material-symbols-outlined">
+                        counter_1
+                        </span>
+                    <li>Ácido hialurónico no reticulado</li>
+                    <span class="material-symbols-outlined">
+                        counter_2
+                        </span>
+                    <li>Ácido hialurónico reticulado</li>
+                </ul>
+                <br>
+                <p>Para un efecto de hidratación, se inyecta a poca profundidad, en baja concentración y sin reticular ya que estimula el fibroblasto. Si se quiere conseguir un efecto de relleno, se inyecta a mayor profundidad y así permite corregir las arrugas y la falta de volumen.
+                </p>
+                <br>
+                <p>Además, esta proteína tiene grandes propiedades curativas y antiinflamatorias, lo que hace que pueda tener otros usos, particularmente en el campo de la medicina de rehabilitación y medicina deportiva. De hecho, se usa a menudo como base para los tratamientos de infiltración. osteoartritis de la rodilla o la cadera y las articulaciones en general.</p>
+                <br>
+                <p>Las principales ventajas de este tratamiento son:</p>
+                <br>
+                <ul class="listPropiedades">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+
+                    <li>Dar volumen e hidratación</li>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+
+                    <li>Estimular la producción de colágeno</li>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+
+                    <li>Su efecto antioxidante</li>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span>
+
+                    <li>Ayudar a regenerar y cicatrizar la piel</li>
+                </ul>
+            </div>
+
+            <div class="parrafo">
+                <h3>Resultados y duración del ácido hialurónico</h3>
+                <p>Los resultados de este tratamiento son inmediatos, pero temporales. Debemos recordar que el ácido hialurónico es un producto reabsorbible que no da resultados permanentes. Entonces, si desea utilizar este sistema para dar volumen a los labios, ocultar un pequeño bulto de la nariz o rellenar las arrugas de la cara, siempre se debe repetir el tratamiento después del período de reabsorción.
+                </p>
+                <br>
+                <p>En general, los resultados obtenidos con este producto pueden duran entre 4 y 6 meses, a veces hasta 12, pero es importante tener en cuenta que la duración no es predecible exactamente porque el efecto y la duración dependen del sitio donde se realiza la infiltración y de las características del paciente. Después de probablemente seis meses, hay una reabsorción fisiológica casi completa del producto.
+                </p>
+                <br>
+                <p>Los resultados obtenidos suelen ser naturales si el producto se inyecta en una cantidad apropiada, sin embargo, es posible repetir el tratamiento y realizar varias sesiones para corregir y refinar los resultados gradualmente. Se recomienda que una vez aplicado, los pacientes no se realicen tratamientos faciales con calor, como la radiofrecuencia, ya que degradaría el producto aplicado. Tampoco recomiendan exponerse al sol o realizarse limpiezas o masajes.
+                </p>
+                <br>
+                <p>¿Con qué frecuencia se puede repetir el tratamiento? Esto puede variar pero los tratamientos e infiltraciones se pueden repetir en cualquier momento. En general, puedes repetir el relleno de arrugas cada 6-12 meses y cada 6 meses para los labios.</p>
+            </div>
+
+            <div class="parrafo" id="preguntas">
+                    
+                    <h3 style="padding-left: 40px;">Preguntas frecuentes</h3>
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Qué hacer si sale un edema después del tratamiento? </h4>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <li>Si aparece un ligero edema podemos utilizar compresas frías, de leve a moderado el uso de anti-inflamatorios sería una opción, edema severo se indica el uso de corticosteroides inyectados.
+                    </li>    
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Se pueden prolongar los resultados?</h4> 
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>Una vez aplicado el producto, es recomendable no hacerse tratamientos faciales con calor, como la radiofrecuencia, ya que degradaría el producto aplicado. Tampoco es recomendable exponerse al sol o realizarse limpiezas, o masajes en el rostro. Cuanto mas se cuide cada paciente, mas duraderos serán los resultados.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Quién puede aplicarselo?</h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>         
+                    <li>Está recomendado para pieles envejecidas y dañadas por la edad, que posean arrugas y marcas propias de la edad. Pero también puede ser aplicado en personas jóvenes que quieran disimular las primeras arrugas, o aumentar el volumen de labios, o pómulos.
+                    </li>
+                </div>
+            
+            
+            </div>
+      
+
+        <div class="banerContainer">
+            <h2>ÁCIDO HIALURÓNICO</h2>
+            <img class="banerImg" src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/toxPic.png" alt="mujer del baner">
+            <ul class="otrosTratamientosContainer">
+                <h4>Otros tratamientos</h4>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis">Criolipólisis</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación de Rebaje</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Carillas</a></li>
+            </ul>
+            <iframe src="https://www.instagram.com/d.rejuvenece/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" style=" box-shadow: 0px 1px 10px rgba(0,0,0,0.2);"></iframe>
+        </div>
+     </div>
+
+    
+    <footer>
+        <div class="footer_container">
+
+            <img class="Logo_footer" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_BLANCO.png" alt="Logo Drejuvenece">
+            
+            <ul class="contact">
+                <h3 class="titulo"> CONTACTO</h3>
+                <li> Telefono/ whataspp: +569 9958 6889</li>
+                <li> Correo electrónico: drejuvenece@gmail.com</li>
+                <li> Dirección: javiera carrera  1655 - Temuco</li>
+            </ul>
+
+            <ul class="tratamientos">
+                <h3 class="titulo">TRATAMIENTOS FRECUENTES</h3>
+                
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><h4>ESTÉTICA DENTAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Carillas</li></a> 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Blanqueamiento</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Coronas</li></a>
+                 
+                <a href=""><h4>ESTÉTICA FACIAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html"><li>Toxina Botulinica</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html"><li>Ácido hilurónico</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html"><li>Hilos tensores</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html"><li>Mesoterapia</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html"><li>Jato plasma</li></a>
+                 
+                <a href=""><h4>ESTÉTICA CORPORAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Electroporación</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Ondas de choque</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html"><li>Criolipolisis</li></a>
+                 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><h4>DEPILACIÓN LÁSER</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rostro</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Pierna</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rebaje</li></a>
+            </ul>
+            
+            <ul class="RRSS">
+                <h3 class="titulo">RRSS</h3>
+                <a href="https://www.facebook.com/drejuvenece.tco">
+                    <li>Facebook</li> 
+                </a>
+                
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+
+                <a href="https://www.instagram.com/d.rejuvenece/">
+                    <li>instagram</li>
+                </a>
+                
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </ul>
+            <ul class="node">
+                <li>Desarrollado por</li>
+                <a href=""><img src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Página 2.png" alt="node"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="flotanteBoton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento">
+            
+        <span class="material-symbols-outlined">
+            view_agenda
+            </span>
+        <div class="contentBoton">AGENDA VIRTUAL</div>
+    </a>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRP (Plasma Rico en Plaquetas)</title>
+    <link rel="shorcut icon" href="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_Def.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        .layoutContainer {
+            width: 98%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            column-gap: 120px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .boxContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 1fr 40px 1fr;
+            grid-template-rows: repeat(4 1fr); 
+            row-gap: 20px;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boxContainer li {
+            color: rgb(44, 0, 110);
+        }
+
+        .boxContainer span {
+            color: rgb(44, 0, 110);
+        }
+
+        .parrafo {
+            line-height: 2;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            text-align: justify;
+            
+        }
+
+        #preguntas {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(15 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        #preguntas h3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+
+        .parrafo h3 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo h4 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo ion-icon {
+            color: rgb(44, 0, 110);
+
+            font-size: 30px;
+        }
+
+        .banerContainer{
+            display: grid;
+            grid-template-rows: 150px 800px 400px 480px;
+        }
+
+        .tituloContainer {
+            background: hotpink;
+            padding-top: 60px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .tituloContainer h2 {
+            text-align: center;
+            color: white;
+        }
+
+        .tituloContainer h4{
+            text-align: center;
+            color: white;
+        }
+
+
+
+        .banerContainer img {
+            width: 400px;
+            height: 800px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            
+        }
+
+        .otrosTratamientosContainer {
+        width: 100%;
+        height: 300px;
+        background: white;
+        margin-top: 40px;
+        text-align: center;
+         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        
+
+        }
+
+        .otrosTratamientosContainer > h4 {
+        background: hotpink;
+        color: #fff;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        .otrosTratamientosContainer > li {
+            background-color: papayawhip;
+            color: #333;
+            padding: 20px;
+        }
+
+        .otrosTratamientosContainer > li:hover {
+            background: rgb(255, 250, 242);
+            font-size: large;
+            transition: 1sg;
+        }
+
+        .boton {
+            position: fixed; 
+            right: 0; 
+            width: 200px; 
+            height: 50px; 
+            background: rgb(138, 43, 226, 0.9); 
+            z-index: 1;
+            top: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton:hover {
+            background: rgb(44, 109, 137);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(62, 16, 100, 0.8);
+        }
+
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html"><img class="logoDrejuvenece" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Clínica.png" alt="Logo Clinica Drejuvenece"></a>
+        <div class="leftbarContainer">
+            
+            <a class="shopping" href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>        
+            </a>
+            <a class="registro" href="#"> 
+                <h5>REGISTRATE</h5>
+             </a>
+            <a class="acceso" href="https://drejuvenece.dentalink.cl/sessions/login"> 
+                <span class="material-symbols-outlined">lock_open</span> 
+                <h5>ACCESO DOCTORES</h5> 
+            </a>
+        </div>
+     </header>                
+    
+    <div class="navBackground">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html">Inicio</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html">Tratamientos</a>
+                    <ul class="submenu">
+                        <li class="submenuF"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#facialTag">Estética Facial</a>
+                            <ul class="tratamientosF">
+                                <li> <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html">Toxina Botulinica</a> </li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html">Ácido hialurónico</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/PRP/prp.html">Plasma rico en plaquetas</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html">Hilos Tensores</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html">Mesoterapia</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html">Jato Plasma</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenuC"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#corporalTag">Estetica Corporla</a>
+                            <ul class="tratamientosC">
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipolisis</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/hondasChoque/hondaschoque.html">Hondas de choque</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html">Electroporación</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Odontologia general</a></li>
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación triláser</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Blog/blog.html">Blog</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/antes&Despues/workingProgress.html">Antes y despues</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Nuestra Clínica/nuestraClínica.html">Nuestra clínica</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html#contactoLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+     <div class="layoutContainer">
+
+        <div class="textContainer">
+
+            <div class="boxContainer"> 
+                <span class="material-symbols-outlined">
+                    syringe
+                    </span>
+                <li>No requiere anestecia</li>
+                <span class="material-symbols-outlined">
+                    schedule
+                    </span>
+                <li>una hora de intervención aprox.</li> 
+                <span class="material-symbols-outlined">
+                    auto_fix
+                    </span>
+                <li>Efectos visibles despues de un mes</li>
+                <span class="material-symbols-outlined">
+                    local_hospital
+                    </span>
+                <li>No requiere hospitalización</li>
+                <span class="material-symbols-outlined">
+                    chair
+                    </span>
+                <li>No requiere reposo</li>
+                <span class="material-symbols-outlined">
+                    self_care
+                    </span>
+                <li>Resultados temporales</li>
+            </div>
+
+            <a class="boton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div  style="color: white;">Agenda Online</div></a>
+
+            <div class="parrafo">
+                <h3 >¿Qué es el Plasma Rico en Plaquetas?</h3>
+                <br>
+                <p>Desde hace muchas décadas, el Plasma Rico en Plaquetas se ha utilizado en la medicina por sus propiedades estimuladoras de la proliferación de células derivadas de células madres, que pueden originar: fibroblastos, células endoteliales, adipoblastos, entre otros, que sirven para la regeneración de tejidos, por lo que se utiliza con frecuencia para la curación de heridas y el tratamiento de problemas articulares.
+
+                </p>
+                <br>
+                <p>Los tratamientos de rejuvenecimiento facial en la actualidad se inician a partir de los 35 años, y cada vez se observan a edades más tempranas.</p>
+                <br>
+                <p>Las plaquetas son componentes de nuestra sangre, que en el organismo tienen la capacidad de producir factores de crecimiento o de regeneración, cuando son sometidas a procesos inflamatorios por daño en vasos sanguíneos o tejidos.
+
+                </p>
+                <br>
+                <p>El Plasma Rico en Plaquetas se define como un volumen de plasma con una concentración de plaquetas superior a lo que normalmente encontramos en nuestra sangre, con la finalidad de utilizarse como tratamiento para regenerar tejidos.</p>
+                <br>
+                <p>Para obtener el plasma, es necesario sacar sangre de la misma persona que va a utilizarlo. Esta sangre, se recoge en un tubo con un anticoagulante, que se coloca en un aparato que se llama centrifugador, que se encarga de separar las plaquetas del resto de componentes de la sangre. Una vez realizado, se separa el plasma que tiene mayor concentración de plaquetas.
+
+                </p>
+                <br>
+                <p>Dentro de las plaquetas, se encuentran unas estructuras llamadas gránulos alfa, estos contienen muchos factores de crecimiento que van a servir para ayudar a la regeneración de tejidos. Al tubo que contiene el Plasma Rico en Plaquetas se le añade una sustancia que va a activar las plaquetas para que empiecen a producir y liberar desde los gránulos, sus factores de crecimientos y así puedan ser inyectadas en la piel del área que se va a tratar.</p>    
+            </div>
+
+            <div class="parrafo">    
+                <h3>¿Quién es candidato para Plasma Rico en Plaquetas?</h3>
+                <br>
+                <p>Cualquier persona, hombre o mujer, de cualquier tipo de piel, que presente signos de pérdida de elasticidad y volumen en la piel, cicatrices por acné o cirugías, quemaduras o pérdida de cabello. Lo recomendamos a aquellas personas que están empezando a observar cómo su piel está perdiendo colágeno pero lo cierto es que no habrá que esperar a ver los síntomas ya que también se puede usar de manera preventiva.</p>
+            </div>
+
+            <div class="parrafo">
+                <h3>¿Cómo se realiza el procedimiento?</h3>
+                <br>
+                <p>Lo primero es preparar el plasma, siempre con una buena limpieza del área de donde se va a extraer la sangre. Debes de fijarte que el médico que realice esto, utilice guantes estériles y siga unas buenas normas de higiene.</p>
+                <br>
+                <p>Se empieza por extraerte sangre del brazo con una jeringuilla y se coloca en un tubo que contiene un anticoagulante para evitar que las plaquetas se activen y formen coágulos. Esto puede realizarse mediante una técnica abierta o manual cuando se realiza con un tubo, o por una técnica cerrada en el caso de utilizar un kit comercial. La Agencia Española de medicamentos y productos sanitarios considera la aplicación de Plasma Rico en Plaquetas como un medicamento de uso humano. En el caso de que la obtención del plasma sea de forma manual o técnica abierta, el médico que lo realice deberá contar con las inspecciones correspondientes tanto de la técnica como de las instalaciones donde se realiza. Por otro lado, si la obtención de plasma se realiza mediante kits o técnica cerrada, se deberá seguir las instrucciones descritas de su uso y el kit deberá contar con la marcación que lo acredite para su utilización.
+                </p>
+                <br>
+                <p>La sangre que te han retirado se coloca en un centrifugador, que es una máquina que se va a encargar de separar las plaquetas del resto de componentes. El plasma que contiene las plaquetas se separa en otro tubo, y se le añaden factores que lo activen (trombina o gluconato de calcio), para que empiecen a formar y liberar factores de crecimiento desde los gránulos alfa. Después, este concentrado de plaquetas es inyectado con pequeñas punciones en la piel del área que vas a tratar. Dependiendo del tratamiento y de lo que deseas, las inyecciones serán mas superficiales, similares a una mesoterapia, cuando se trate de rejuvenecimiento facial o de tratamientos capilares, y más profundas en caso de que estemos buscando un efecto de relleno como en el tratamiento de cicatrices.
+                </p>
+                <br>
+                <h3>¿Qué sucede después del procedimiento?</h3>
+                <p>Después del tratamiento puedes observar una mínima hinchazón, enrojecimiento o moretones en el área, que pueden aparecer entre las 12 a 24 horas iniciales. Tras la aplicación puedes retomar tu vida normal ya que no aparecerán marcas ni cicatrices. A diferencia de otros tratamientos, tampoco es necesario hacer reposo. En caso de que aparezcan moretones, estos pueden ser visibles por 3 a 4 días.</p>
+                <br>
+                <h3>Resultados del Plasma Rico en Plaquetas</h3>
+                
+                <p>Los efectos van a ser visibles a partir de las 3 semanas siguientes, que es cuando el colágeno que se ha producido empieza a madurar y puedes observar que la piel se vuelve más tensa y radiante. Vas a notar mejoría en la textura y tono de tu piel. </p>
+                <br>
+                <p>La regeneración completa del colágeno ocurre a los 3 meses del procedimiento. Con el cuidado diario con cremas y protección solar, y la combinación con otros tratamientos como láser o radiofrecuencia, puede potenciar estos efectos. Se realizará una sesión mensual por 3 – 4 meses, después de eso, se necesitaran de 1 a 2 sesiones anuales de mantenimiento. Si además, combinamos el PRP con ácido hialurónico, los beneficios en la corrección de la pérdida de volumen es total.</p>
+            </div>
+
+            <div class="parrafo">
+                <h3>Riesgos y efectos secundarios posibles</h3>
+                <br>
+                <p>Los efectos secundarios más comunes son la hinchazón y enrojecimiento del área, también pueden observarse moretones en los sitios de inyecciones, que duran varios días.
+                </p>
+                <br>
+                <p>Aunque es una técnica sencilla, conlleva ciertos riesgos como la aparición de infecciones en el sitio que hemos tratado, reacciones alérgicas (aunque esto es muy poco probable ya que estamos usando nuestra propia sangre) o dolor en el área inyectada.</p>
+            </div>
+
+            
+
+                <div class="parrafo" id="preguntas">
+                    
+                    <h3 style="padding-left: 40px;">Preguntas frecuentes</h3>
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿En quienes no debe realizarse? </h4>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <li>En personas con sepsis, cáncer, enfermedades sanguíneas, infecciones agudas o crónicas, enfermedades hepáticas, enfermedades sistémicas o metabólicas, enfermedades cutáneas, alergias, consumo excesivo de alcohol o cigarrillo.
+                    </li>    
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Cuales son las ventajas de este procedimiento?  </h4> 
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>Tiene menor riesgo de reacciones alérgicas, ya que usamos nuestras propias plaquetas. Es Ideal en personas que no desean utilizar rellenos sintéticos. Puede utilizarse en combinación con otros tratamientos para mejorar aun más sus efectos. Es igualmente efectiva en hombre y mujeres.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Que se debe evitar previo al procedimiento? </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>         
+                    <li>    El cigarrillo y el alcohol pueden disminuir los efectos del plasma. Es recomendable evitar el uso de antiinflamatorios no esteroideos o cortisona de 1 a 2 semanas después del procedimiento, así no disminuye el efecto del plasma.
+
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>   
+                    <h4>¿Cuánto dura cada sesión? </h4>                
+                    <ion-icon name="information-circle-outline"></ion-icon>          
+                    <li>Aproximadamente cada sesión tendrá una duración de una hora a una hora y media, considerando el tiempo de limpieza, extracción de sangre, separación de plaquetas y aplicación de producto.
+
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>                  
+                    <h4>¿¿Es doloroso? </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                        
+                    <li>Aunque puedes sentir una ligera incomodidad por las inyecciones, en general es un procedimiento no doloroso. Si es necesario se puede utilizar anestesia en crema antes de realizarlo.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>                    
+                    <h4>¿Cuánto duran los efectos?</h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>                      
+                    <li>La mejoría en el tono y textura de la piel la empezarás a notar 3 semanas después, y los efectos a largo plazo serán a los 3 meses que el colágeno ha cumplido su proceso de maduración.
+
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>                    
+                    <h4>¿Cuantas sesiones son necesarias? </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>Usualmente se realiza una sesión mensual por 3 meses, aunque siempre dependerá del objetivo de tu tratamiento y la planificación que hayas realizado con tu médico.</li>
+                    
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>                    
+                    <h4>¿Se puede combinar con otros tratamientos?</h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>Se ha probado en varios estudios que el Plasma Rico en Plaquetas es un potenciador de los efectos de varios tratamientos, por lo que se puede utilizar en combinación con microagujas, laser, radiofrecuencia u otras terapias de luz como luces LED.</li>
+                    
+                </div>
+            
+            
+            </div>
+            
+     
+            
+
+       
+
+        <div class="banerContainer">
+            <div class="tituloContainer">
+                <h2>PRP</h2>
+                <h4>(Plasma Rico en Plaquetas)</h4>
+            </div>
+            <img class="banerImg" src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/toxPic.png" alt="mujer del baner">
+            <ul class="otrosTratamientosContainer">
+                <h4>Otros tratamientos</h4>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis">Criolipólisis</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación de Rebaje</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Carillas</a></li>
+            </ul>
+            <iframe src="https://www.instagram.com/d.rejuvenece/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" style=" box-shadow: 0px 1px 10px rgba(0,0,0,0.2);"></iframe>
+        </div>
+     </div>
+
+    
+    <footer>
+        <div class="footer_container">
+
+            <img class="Logo_footer" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_BLANCO.png" alt="Logo Drejuvenece">
+            
+            <ul class="contact">
+                <h3 class="titulo"> CONTACTO</h3>
+                <li> Telefono/ whataspp: +569 9958 6889</li>
+                <li> Correo electrónico: drejuvenece@gmail.com</li>
+                <li> Dirección: javiera carrera  1655 - Temuco</li>
+            </ul>
+
+            <ul class="tratamientos">
+                <h3 class="titulo">TRATAMIENTOS FRECUENTES</h3>
+                
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><h4>ESTÉTICA DENTAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Carillas</li></a> 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Blanqueamiento</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Coronas</li></a>
+                 
+                <a href=""><h4>ESTÉTICA FACIAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html"><li>Toxina Botulinica</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html"><li>Ácido hilurónico</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html"><li>Hilos tensores</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html"><li>Mesoterapia</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html"><li>Jato plasma</li></a>
+                 
+                <a href=""><h4>ESTÉTICA CORPORAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Electroporación</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Ondas de choque</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html"><li>Criolipolisis</li></a>
+                 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><h4>DEPILACIÓN LÁSER</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rostro</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Pierna</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rebaje</li></a>
+            </ul>
+            
+            <ul class="RRSS">
+                <h3 class="titulo">RRSS</h3>
+                <a href="https://www.facebook.com/drejuvenece.tco">
+                    <li>Facebook</li> 
+                </a>
+                
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+
+                <a href="https://www.instagram.com/d.rejuvenece/">
+                    <li>instagram</li>
+                </a>
+                
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </ul>
+            <ul class="node">
+                <li>Desarrollado por</li>
+                <a href=""><img src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Página 2.png" alt="node"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="flotanteBoton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento">
+            
+        <span class="material-symbols-outlined">
+            view_agenda
+            </span>
+        <div class="contentBoton">AGENDA VIRTUAL</div>
+    </a>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+
+</html>

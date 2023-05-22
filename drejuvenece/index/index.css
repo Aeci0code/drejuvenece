@@ -1,0 +1,719 @@
+  *{
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      list-style: none;
+      color: #333;
+      padding: 0;
+      margin: 0;
+  }
+
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  body {
+    width: 95%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-rows: 50px 50xp 1fr 1fr; 
+  }
+
+  /*header*/
+  header {
+    margin-top: 20px;
+    background: white;
+    height: 50px;
+    display: flex;
+    font-size: small;
+    font-weight: bolder;
+  }
+  
+  .logoDrejuvenece {
+    height: 50px;
+  }
+
+  .leftbarContainer {
+    
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 75% 1fr 3fr 6fr
+  }
+
+  .shopping {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .registro  {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+
+  .acceso {
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: center;
+    
+  }
+  
+  /*Nav*/
+
+  .navBackground {
+    
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.navegacion{
+	width: 1200px;
+  }
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+  z-index: 1;
+  }
+
+.menu > li > a{
+	display: block;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*****************   Tratamientos   *****************/
+
+.tratamientosF{
+	position: absolute;
+  left: 150px;
+  top: 0;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.submenuF:hover .tratamientosF{
+	visibility: visible;
+	opacity: 1;
+}
+
+.tratamientosC{
+	position: absolute;
+    left: 150px;
+    top: 40px;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.submenuC:hover .tratamientosC{
+	visibility: visible;
+	opacity: 1;
+}
+  /*Section*/
+
+  section {
+    width: 100%; 
+    display: grid;
+    grid-template-rows: 100vh 300px 350px 550px 1fr 1fr;
+  }
+
+  /*HERO*/
+
+  .hero {
+
+    width: 112%;
+    height: 100vh;
+    margin-left: -12%;
+
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s ease-in-out;
+    background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner1.jpg);
+    animation: hero 35s infinite linear;
+ }   
+
+ .heroContent {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(72, 38, 106, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.heroContent h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.botonClinica {
+    color: #fff;
+   margin-top: 10px;
+}
+
+.heroContent a{
+        margin: 0;
+        padding: 9px 20px;
+        margin-bottom: 10px;
+        color: #fff;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        transition: all .15s ease-in-out;
+}
+
+.heroContent a:hover {
+    background-color: #fff;
+    color: #333;
+
+}
+
+@keyframes hero{
+    0%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner1.jpg)
+    }
+    20%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner1.jpg)
+    }
+    21%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner2.jpg)
+    }
+    40%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner2.jpg)
+    }
+    41%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner3.jpg)
+    }
+    60%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner3.jpg)
+    }
+    61%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner4.jpg)
+    }
+    80%{
+        background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner4.jpg)
+    }
+    81%{
+      background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner5.jpg)
+  }
+    100%{
+      background-image: url(/Users/juliolopezsoto/Documents/web/drejuvenece/pics/hero/baner5.jpg)
+  }
+}
+  
+/*icontratamiento*/
+
+  .iconTratamientos ul{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2%;
+    
+  
+    
+  }
+
+  .iconTratamientos ul a{
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(226, 209, 236);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10px;
+    margin-top: 50px; 
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+    top: 50px;
+  }
+  
+  
+ .iconTratamientos ul a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+ }
+
+  .iconTratamientos ul a img{
+    position: relative;
+    left: 60px;
+    bottom: -64px;
+    
+  }
+
+  .iconTratamientos ul a li{
+    text-align: center;
+    position: relative;
+    bottom: -64px;
+    color: rgb(53, 5, 85);
+    font-weight:800;
+  }
+
+
+  /*Certificado*/
+
+  .certificadoGrid {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+  }
+
+  .botonBox {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 113px;
+    background:#b2b2b2;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+ 
+
+  .certificadoBox {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(87, 148, 162);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .certificadoBox span {
+    margin-left: 23px;
+    color: white;
+  }
+
+  .certificadoBox div h3{
+    color: white;
+  }
+
+  .certificadoBox div li {
+    color: white;
+  }
+
+  .experiencia {
+    margin-top: 10px;
+  }
+
+  .personalisacion {
+    margin-top: 10px;
+  }
+
+  .galeryMini {
+   width: 570px;
+   height: 380px;
+   background: lightblue; 
+   display: grid;
+   grid-template-columns: repeat(3, 190px);
+   grid-template-rows: 190px, 190px;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .galeryMini img {
+    width: 190px;
+    height: 190px;
+  }
+
+
+/*Flotante*/
+
+.flotanteBoton {
+  width: 190px;
+  height: 40px;
+  background: rgb(87, 148, 162);
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+
+
+  position: fixed;
+  left: 100%;
+  z-index: 1;
+}
+
+.flotanteBoton span {
+  color: white;
+}
+
+.contentBoton {
+  color: white;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+  /***************************** tratamiento más popular ********************************/
+
+  .cardContainer {
+  
+    display: grid;
+    grid-template-columns: repeat(4 275px);
+    grid-template-rows: 50px 440px;
+    column-gap: 25px;
+    border-radius: 15px;
+    margin-top: 50px;
+    
+  }
+
+  .tituloBox{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .cardA {
+    width: 275px;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardA h4 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  .cardA p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+  }
+
+  .cardB {
+    width: 275px;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardB h4 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  .cardB p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+  }
+
+  .cardC {
+    width: 275px;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardC h4 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  .cardC p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+  }
+
+  .cardD {
+    width: 275px;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardD h4 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  .cardD p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+  }
+
+  .cardContainer a {
+  transition: all 400ms ease;
+    top: 50px;
+  }
+  
+  .cardContainer a:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+ }
+  .pic-img {
+    width:275px;
+    height: 275px;
+  }
+
+/*Instagram*/
+
+
+
+  .instaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .instaGrid {
+    width: 1000px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 40px 1fr;
+    border-radius: 10px;
+    background: rgb(204, 190, 217);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.instaGrid img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+
+}
+.instaGrid h2 {
+  color: #333;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.instaGrid > iframe {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/*Contacto*/
+
+.contactoContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+}
+
+.flexContact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactoBox {
+  width: 500px;
+  height: 260px;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(4 1fr);
+  row-gap: 20px;
+  padding: 20px;
+  
+   
+}
+
+.contactoBox h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.ubicacionBox {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.mapouter {
+  margin-right: -10%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Footer*/
+
+footer {
+  width: 120%;
+  height: 450px;
+  margin-left: -20%; 
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #333;
+  
+}
+
+.footer_container {
+  height: 425px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  position: relative;
+  top: 25px;
+  font-size: small;
+  line-height: 1.5;
+  background: #333;
+  
+}
+
+.Logo_footer {
+  width: 200px;
+}
+
+.titulo {
+  font-size:larger;
+  font-weight: bold;
+}
+
+.RRSS {
+  display: grid;
+  grid-template-columns: 20px 3fr;
+  grid-template-rows: 20px 20px 20px;
+  grid-column-gap: 10px;
+}
+
+.RRSS .titulo {
+  grid-column-start: 2;
+}
+  
+.RRSS :nth-child(2) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  color: white;
+}
+
+.RRSS :nth-child(3) {
+ 
+ position: relative;
+ top: 5px;
+ left: 5px;
+}
+
+.RRSS :nth-child(4) {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  color: white;
+}
+
+.RRSS :nth-child(5) {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.footer_container ul h3 {
+  color: white;
+}
+
+.footer_container ul h4 {
+  color: white;
+}
+
+.footer_container ul li {
+  color: white;
+}
+
+/********* node **********/
+.node {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 250px;
+}
+.node > a > img {
+  width: 100px;
+  height: auto;
+  padding-left: 10px;
+  
+}

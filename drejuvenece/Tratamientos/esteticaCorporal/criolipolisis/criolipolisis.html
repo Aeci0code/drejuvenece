@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criolipólisis</title>
+    <link rel="shorcut icon" href="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_Def.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        .layoutContainer {
+            width: 98%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            column-gap: 120px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .boxContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 1fr 40px 1fr;
+            grid-template-rows: repeat(4 1fr); 
+            row-gap: 20px;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boxContainer li {
+            color: rgb(44, 0, 110);
+        }
+
+        .boxContainer span {
+            color: rgb(44, 0, 110);
+        }
+
+        .parrafo {
+            line-height: 2;
+            padding: 30px;
+            background: rgb(245, 243, 247);
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            text-align: justify;
+            
+        }
+
+        #preguntas {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(15 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        #preguntas h3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+
+        .parrafo h3 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo h4 {
+            color: rgb(44, 0, 110)
+        }
+
+        .parrafo ion-icon {
+            color: rgb(44, 0, 110);
+
+            font-size: 30px;
+        }
+
+        .banerContainer{
+            display: grid;
+            grid-template-rows: 150px 800px 400px 480px;
+        }
+
+        .banerContainer h2 {
+            background: rgb(40, 152, 189);
+            text-align: center;
+            padding-top: 60px;
+            color: white;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .banerContainer img {
+            width: 400px;
+            height: 800px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .otrosTratamientosContainer {
+        width: 100%;
+        height: 300px;
+        background: white;
+        margin-top: 40px;
+        text-align: center;
+         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        
+
+        }
+
+        .otrosTratamientosContainer > h4 {
+        background: rgb(40, 152, 189);
+        color: #fff;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        .otrosTratamientosContainer > li {
+            background-color: papayawhip;
+            color: #333;
+            padding: 20px;
+        }
+
+        .otrosTratamientosContainer > li:hover {
+            background: rgb(255, 250, 242);
+            font-size: large;
+            transition: 1sg;
+        }
+
+        .boton {
+            position: fixed; 
+            right: 0; 
+            width: 200px; 
+            height: 50px; 
+            background: rgb(138, 43, 226, 0.9); 
+            z-index: 1;
+            top: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton:hover {
+            background: rgb(44, 109, 137);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(62, 16, 100, 0.8);
+        }
+
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html"><img class="logoDrejuvenece" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Clínica.png" alt="Logo Clinica Drejuvenece"></a>
+        <div class="leftbarContainer">
+            
+            <a class="shopping" href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>        
+            </a>
+            <a class="registro" href="#"> 
+                <h5>REGISTRATE</h5>
+             </a>
+            <a class="acceso" href="https://drejuvenece.dentalink.cl/sessions/login"> 
+                <span class="material-symbols-outlined">lock_open</span> 
+                <h5>ACCESO DOCTORES</h5> 
+            </a>
+        </div>
+     </header>                
+    
+    <div class="navBackground">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html">Inicio</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html">Tratamientos</a>
+                    <ul class="submenu">
+                        <li class="submenuF"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#facialTag">Estética Facial</a>
+                            <ul class="tratamientosF">
+                                <li> <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html">Toxina Botulinica</a> </li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html">Ácido hialurónico</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/PRP/prp.html">Plasma rico en plaquetas</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html">Hilos Tensores</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html">Mesoterapia</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html">Jato Plasma</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenuC"><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html#corporalTag">Estetica Corporla</a>
+                            <ul class="tratamientosC">
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipolisis</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/hondasChoque/hondaschoque.html">Hondas de choque</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html">Electroporación</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Odontologia general</a></li>
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación triláser</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Blog/blog.html">Blog</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/antes&Despues/workingProgress.html">Antes y despues</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Nuestra Clínica/nuestraClínica.html">Nuestra clínica</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html#contactoLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+     <div class="layoutContainer">
+
+        <div class="textContainer">
+
+            <div class="boxContainer"> 
+                <span class="material-symbols-outlined">
+                    syringe
+                    </span>
+                <li>No requiere anestecia</li>
+                <span class="material-symbols-outlined">
+                    schedule
+                    </span>
+                <li>Menos de 1 hora de intervención</li>
+                <span class="material-symbols-outlined">
+                    auto_fix
+                    </span>
+                <li>Efectos despues de un mes</li>
+                <span class="material-symbols-outlined">
+                    local_hospital
+                    </span>
+                <li>No requiere hospitalización</li>
+                <span class="material-symbols-outlined">
+                    chair
+                    </span>
+                <li>No requiere reposo</li>
+                <span class="material-symbols-outlined">
+                    self_care
+                    </span>
+                <li>Resultados temporales</li>
+            </div>
+
+            <a class="boton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div  style="color: white;">Agenda Online</div></a>
+
+            <div class="parrafo">
+                <h3 >¿Qué es la criolipólisis?</h3>
+                <p>Puede ser que a pesar de realizar deporte y seguir una buena alimentación, la grasa de ciertas áreas del cuerpo se resista. En estos casos, existe la posibilidad de tratar la grasa localizada sin tener que recurrir a la cirugía gracias a la criolipólisis, conocida como una técnica de liposucción sin cirugía.</p>
+                <br>
+                <p>Desde hace años se utiliza el frío para destruir algunos tejidos de la piel como por ejemplo, verrugas u otras lesiones dermatológicas. La criolipólisis o criolipoplastia, es una técnica no invasiva de la medicina estética dirigida a eliminar depósitos de grasa localizados en frío. La etimología de la palabra "criolipólisis" significa la destrucción (lisis) de la grasa (lipo) por el frío (crio). Este es un método que ha sido muy popular en los últimos años porque permite a los pacientes deshacerse de sus protuberancias de manera efectiva, sin tener que someterse a una cirugía estética y por un coste menor.
+                </p>
+                <br>
+                <p>Las células adiposas son más vulnerables frente al enfriamiento y por este motivo, los adipocitos se eliminan con el frío sin dañar la piel.</p>
+                <br>
+                <ul style="margin-left: 20px;"> <h4 style="margin-left: -20px; color: #333;">La criolipólisis actúa de la siguiente manera:</h4> 
+                    <br>
+                    <li>Los ácidos grasos contenidos en las células grasas se cristalizan</li>
+                    <br>
+                    <li>Las células se autodestruyen progresivamente durante un período de 6 semanas a 3 meses</li>
+                    <br>
+                    <li>Las células grasas mueren y son eliminadas gradualmente por el organismo a través de las vías naturales</li>
+
+                </ul>
+            </div>
+
+            <div class="parrafo">    
+                <h3>¿Cómo es la sesión de criolipólisis?</h3>
+                <br>
+                <p>El tratamiento es indoloro y dura en 30 y 60 minutos en función del número de zonas a tratar. Los especialistas de "Clinica DRejuvenece" nos cuentan a continuación cómo es la sesión de la criolipólisis:
+                </p>
+                <br>
+                <ul styl-20px
+                e="margin-left: 20px;">
+                    <li>En la primera sesión, el profesional realizará un análisis de la composición corporal para calcular de esta forma la densidad del tejido adiposo de la zona seleccionada con un plicómetro. Después, se marcará la zona a tratar y el paciente se tumbará en la camilla para estar lo más cómodo posible.</li>
+                    <br>
+                    <li>A continuación el operador colocará el cabezal en la zona a tratar por lo que se realizará una ligera succión ya que se pondrá en contacto la piel con las placas refrigeradoras.</li>
+                    <br>
+                    <li>Al estar en contacto con las placas, la piel se enfriará y el paciente notará una ligera sensación de frío localizado, que en ningún momento será molesta.
+                    </li>
+                    <br>
+                    <li>El proceso de enfriamiento dura 30 minutos por cada zona tratada. Al ser un tratamiento indoloro y agradable, el paciente podrá estar relajado durante ese tiempo o incluso leer.  </li>
+                </ul>
+    
+            </div>
+
+            <div class="parrafo">
+                <h3>¿Qué áreas se pueden tratar?</h3>
+
+                <p>Es posible tratar varias áreas gracias a la criolipólisis y algunos médicos incluso tienen máquinas que permiten tratar dos zonas simultáneamente. Hay pequeños aplicadores para alcanzar áreas como la barbilla doble, y otros más grandes para el abdomen, por ejemplo. Además, los aplicadores han evolucionado con el tiempo y cada vez son más ergonómicos para adaptarse mejor a la zona tratada.</p>                
+                <br>
+                <p>Por lo tanto, es posible tratar prácticamente todo el cuerpo gracias a este tratamiento:
+                </p>
+                <br>
+
+                <ul style="margin-left: 20px;">
+                    <li style="font-weight: bold;">-Mentón</li>
+                    <br>
+                    <li style="font-weight: bold;">-Cara interna de los brazos</li>
+                    <br>
+                    <li style="font-weight: bold;">-Protuberancias de la parte posterior del</li>
+                    <br>
+                    <li style="font-weight: bold;">-Abdomen</li>
+                    <br>
+                    <li style="font-weight: bold;">-Caderas</li>
+                    <br>
+                    <li style="font-weight: bold;">-Cartucheras</li>
+                    <br>
+                    <li style="font-weight: bold;">-Parte interna de los muslos</li>
+                    <br>
+                    <li style="font-weight: bold;">-Rodillas
+                    </li>
+                </ul>
+            </div>
+
+            <div class="parrafo">
+                <h3> LOS RESULTADOS</h3>
+                <P>Los cambios comienzan a aparecer después de 15 días, pero tardarán 3 meses en apreciar los resultados finales ya que la grasa destruida se elimina de forma progresiva a lo largo de 90 días. La criolipólisis reduce el acúmulo de grasa tratado entre 20% y un 50%.</P>
+                <br>
+                <P>Dependiendo del área a tratar, serán necesarias entre 2 y 3 sesiones, espaciadas 3 semanas entre ellas para eliminar permanentemente los michelines.</P>
+                <br>
+                <P>Algunas personas tienen adipocitos que son más resistentes al frío, y los resultados serán menos convincentes. Sin embargo, si sigues las instrucciones de tu médico, los resultados serán visibles y satisfactorios.
+                </P>
+                <br>
+                <P>Ten en cuenta que la criolipólisis es un método no invasivo de la medicina estética, no reemplaza la liposucción.
+                </P>
+                <br>
+                <h4>Mantenimiento del resultado</h4>
+                <P>Naturalmente, y para que los beneficios sean mayores, es importante acompañar este tratamiento de una dieta saludable y actividad física para obtener mejores resultados. Evita comer demasiada grasa, azúcar o sal y practica actividad deportiva en los días posteriores al tratamiento, pero también después para mantener los resultados.</P>
+            </div>
+
+
+
+                <div class="parrafo" id="preguntas">
+                    
+                    <h3 style="padding-left: 40px;">Preguntas frecuentes</h3>
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Liposucción o criolipólisis? </h4>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <li>Ambas técnicas tienen como objetivo eliminar los depósitos de grasa localizados en personas que no pueden eliminar la grasa de forma natural. Sin embargo, la liposucción es una cirugía invasiva que requiere anestesia y para la cual necesitará un tiempo de descanso. La criolipólisis tiene un coste menor y permite reanudar la actividad normal sin dejar cicatrices.
+                    </li>    
+                    
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Es doloroso? </h4> 
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                    <li>S La aspiración de la piel se puede sentir como dolorosa o como una simple molestia. En todos los casos, los pacientes sentirán el dolor durante un máximo de 5 a 10 minutos, después de lo cual el frío adormecerá el área.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <h4>¿Cuánto dura una sesión? </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>         
+                    <li>    Una sesión puede durar de 1 a 3 horas, según el área tratada y los objetivos que se deban alcanzar. En general, las sesiones tienen una duración media de 1h30.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>   
+                    <h4>¿Cuántas sesiones son necesarias? </h4>                
+                    <ion-icon name="information-circle-outline"></ion-icon>          
+                    <li>Dependiendo de la zona a trabajar y la cantidad de grasa presente, tomará entre 2 y 3 sesiones, espaciadas 3 semanas cada una.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>                  
+                    <h4>¿La criolipólisis trata la celulitis?</h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>  
+                        
+                    <li>La criolipólisis trata el tejido adiposo y por lo tanto la celulitis.
+                    </li>
+
+                    <ion-icon name="help-circle-outline"></ion-icon>                    
+                    <h4>¿Podemos optimizar el resultado de una sesión? </h4>    
+                    <ion-icon name="information-circle-outline"></ion-icon>                      
+                    <li> Además de la actividad física regular y una dieta equilibrada, se recomienda en algunos casos sesiones de radiofrecuencia.
+                    </li>
+                </div>
+            
+            
+            </div>
+            
+     
+            
+
+       
+
+        <div class="banerContainer">
+            <h2>CRIOLIPOLISIS</h2>
+            <img class="banerImg" src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/pexels-karolina-grabowska-8363315.jpg" alt="mujer del baner">
+            <ul class="otrosTratamientosContainer">
+                <h4>Otros tratamientos</h4>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis">Criolipólisis</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación de Rebaje</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Carillas</a></li>
+            </ul>
+            <iframe src="https://www.instagram.com/d.rejuvenece/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" style=" box-shadow: 0px 1px 10px rgba(0,0,0,0.2);"></iframe>
+        </div>
+     </div>
+
+    
+    <footer>
+        <div class="footer_container">
+
+            <img class="Logo_footer" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_BLANCO.png" alt="Logo Drejuvenece">
+            
+            <ul class="contact">
+                <h3 class="titulo"> CONTACTO</h3>
+                <li> Telefono/ whataspp: +569 9958 6889</li>
+                <li> Correo electrónico: drejuvenece@gmail.com</li>
+                <li> Dirección: javiera carrera  1655 - Temuco</li>
+            </ul>
+
+            <ul class="tratamientos">
+                <h3 class="titulo">TRATAMIENTOS FRECUENTES</h3>
+                
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><h4>ESTÉTICA DENTAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Carillas</li></a> 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Blanqueamiento</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Coronas</li></a>
+                 
+                <a href=""><h4>ESTÉTICA FACIAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html"><li>Toxina Botulinica</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html"><li>Ácido hilurónico</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html"><li>Hilos tensores</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html"><li>Mesoterapia</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html"><li>Jato plasma</li></a>
+                 
+                <a href=""><h4>ESTÉTICA CORPORAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Electroporación</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Ondas de choque</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html"><li>Criolipolisis</li></a>
+                 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><h4>DEPILACIÓN LÁSER</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rostro</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Pierna</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rebaje</li></a>
+            </ul>
+            
+            <ul class="RRSS">
+                <h3 class="titulo">RRSS</h3>
+                <a href="https://www.facebook.com/drejuvenece.tco">
+                    <li>Facebook</li> 
+                </a>
+                
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+
+                <a href="https://www.instagram.com/d.rejuvenece/">
+                    <li>instagram</li>
+                </a>
+                
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </ul>
+            <ul class="node">
+                <li>Desarrollado por</li>
+                <a href=""><img src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Página 2.png" alt="node"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="flotanteBoton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento">
+            
+        <span class="material-symbols-outlined">
+            view_agenda
+            </span>
+        <div class="contentBoton">AGENDA VIRTUAL</div>
+    </a>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+
+</html>

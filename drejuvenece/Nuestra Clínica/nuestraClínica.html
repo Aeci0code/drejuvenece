@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Clínica</title>
+    <link rel="shorcut icon" href="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_Def.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        p {
+            text-align: justify;
+        }
+        .layoutContainer {
+            width: 98%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            column-gap: 120px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+       .textBox{
+            height: 850px;
+            background: #e4e4e4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 40px;
+            line-height: 1.5;
+       }
+
+       .botonAgenda{
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            background: rgba(72, 38, 106, 1);
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 30%;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+       }
+
+       .botonAgenda:hover {
+            background: rgb(158, 111, 206);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(0,0,0,0.4);
+        }
+
+       .teamContainer h2 {
+        margin-top: 50px;
+        text-align: center;
+        color: rgba(72, 38, 106, 1);
+       }
+
+       .tarjetaBox {
+        width: 400px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: rgb(123, 80, 167);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: start;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+       }
+
+       .tarjetaBox img{
+        width: 200px;
+        height: 200px;
+        background: red;
+        
+       }
+
+       .tarjetaBox h4{
+        color: white;
+       }
+
+       .tarjetaBox h5{
+        color: white;
+       }
+
+       .tarjetaBox ul li {
+        font-size: small;
+        color: white;
+       }
+
+        
+        .banerContainer{
+            display: grid;
+            grid-template-rows: 150px 800px 400px 480px;
+        }
+
+        .banerContainer h2 {
+            background: orange;
+            text-align: center;
+            padding-top: 60px;
+            color: #333;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .banerLayout{
+            width: 400px;
+            height: 800px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: repeat(8, 1fr);
+        } 
+
+        .banerContainer img {
+           width: 200px;
+           height: 200px;
+        }
+
+        .otrosTratamientosContainer {
+        width: 100%;
+        height: 300px;
+        background: white;
+        margin-top: 40px;
+        text-align: center;
+         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        
+
+        }
+
+        .otrosTratamientosContainer > h4 {
+        background: orange;
+        color: #333;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        .otrosTratamientosContainer > li {
+            background-color: papayawhip;
+            color: #333;
+            padding: 20px;
+        }
+
+        .otrosTratamientosContainer > li:hover {
+            background: rgb(255, 250, 242);
+            font-size: large;
+            transition: 1sg;
+        }
+
+        .boton {
+            position: fixed; 
+            right: 0; 
+            width: 200px; 
+            height: 50px; 
+            background: rgb(138, 43, 226, 0.9); 
+            z-index: 1;
+            top: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton:hover {
+            background: rgb(44, 109, 137);
+            transition: 0.3ms;
+            box-shadow: 5px 10px 20px rgba(62, 16, 100, 0.8);
+        }
+
+        
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html"><img class="logoDrejuvenece" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Clínica.png" alt="Logo Clinica Drejuvenece"></a>
+        <div class="leftbarContainer">
+            
+            <a class="shopping" href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>        
+            </a>
+            <a class="registro" href="#"> 
+                <h5>REGISTRATE</h5>
+             </a>
+            <a class="acceso" href="https://drejuvenece.dentalink.cl/sessions/login"> 
+                <span class="material-symbols-outlined">lock_open</span> 
+                <h5>ACCESO DOCTORES</h5> 
+            </a>
+        </div>
+     </header>     
+
+    <div class="navBackground">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/index/index.html">Inicio</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/tratamientos.html">Tratamientos</a>
+                    <ul class="submenu">
+                        <li class="submenuF"><a href="indexTratamientos.html">Estética Facial</a>
+                            <ul class="tratamientosF">
+                                <li> <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html">Toxina Botulinica</a> </li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html">Ácido hialurónico</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/PRP/prp.html">Plasma rico en plaquetas</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html">Hilos Tensores</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html">Mesoterapia</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html">Jato Plasma</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenuC"><a href="indexTratamientos.html">Estetica Corporla</a>
+                            <ul class="tratamientosC">
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipolisis</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/hondasChoque/hondaschoque.html">Ondas de choque</a></li>
+                                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html">Electroporación</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html">Odontologia general</a></li>
+                        <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html">Depilación triláser</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Blog/blog.html">Blog</a></li>
+                <li><a href="#">Antes y despues</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Nuestra Clínica/nuestraClínica.html">Nuestra clínica</a></li>
+                <li><a href="#camote">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+     <div class="layoutContainer">
+        
+        <div class="backgroundContainer">
+
+            <div class="textBox">  
+                <h2 style="color: rgba(72, 38, 106, 1); text-align: center;">NUESTRA CLÍNICA</h2>
+    
+                <ul>
+                    <br>
+                    <P>Bienvenidos a nuestra “Clínica DRejuvenece”, donde el cuidado de la piel y la salud son nuestros principales objetivos. Nuestro equipo de profesionales altamente capacitados, ofrece una amplia gama de tratamientos faciales y corporales utilizando tecnología avanzada y técnicas innovadoras para satisfacer las necesidades individuales de cada paciente.
+                    </P>
+                    <br>
+                    <P>Ayudamos a que nuestros clientes se sientan seguros, saludables y hermosos. Nos apasiona crear un ambiente acogedor y relajante para que nuestros pacientes se sientan cómodos mientras reciben los mejores cuidados.
+                    </P>
+                    <br>
+                    <P>Los invitamos a agendar una evaluación gratuita con uno de nuestros expertos. Nuestros profesionales están disponibles para brindarle su atención especializada y personalizada.</P>
+                    <br>
+                    <a href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div class="botonAgenda">AGENDA ONLINE</div></a>
+                    
+                    <br>
+                </ul>
+    
+                <ul style="margin-left: 20px;">
+                    <p>-Nuestra misión como clínica de estética es ser líderes en el mercado, brindando servicios personalizados y adaptados a las necesidades específicas de cada paciente. Estamos comprometidos con la satisfacción total de nuestros clientes y nos esforzamos por ofrecer los más altos estándares de calidad en nuestra atención y servicios. Nos dedicamos a mejorar la imagen y autoestima de nuestros pacientes, utilizando técnicas innovadoras y avanzadas para cumplir con sus objetivos estéticos.</p>
+                    <br>
+                    <p>-Pretendemos ser líderes en el mercado de la estética facial y corporal, ofreciendo siempre lo mejor de nosotros. Nuestra visión es generar cambios significativos en la vida personal de nuestros pacientes para que puedan disfrutar de una vida plena y trascendental. </p>
+                    <br>
+                </ul>
+    
+                <p>En resumen, en nuestra clínica encuentra todo lo necesario para verse y sentirse bien, con un equipo de primer nivel y profesionales que dejarán su piel radiante, joven y saludable. ¡Lo esperamos!</p>
+    
+            </div>
+
+            <div class="teamContainer">
+                <h2>EQUIPO MÉDICO</h2>
+
+                <div class="tarjetaBox">
+
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/Foto estudio 2022/fotoPerfil/valentinaP.jpg" alt="Dra. Palomera">
+
+                    <div class="tarjetText" style="padding: 20px;">
+                        <h4>Dra. Valentina Palomera Echeverría</h4>
+                        <h5>Cirujano Dentista</h5>
+                        <br>
+                        <ul>
+                            <li>Estética Facial</li>
+                            <li>Odontología general</li>
+                            <li>Odontología Estética</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="tarjetaBox">
+
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/Foto estudio 2022/fotoPerfil/monicaH.jpg" alt="Dra. Hinostroza">
+                        <div class="tarjetText" style="padding: 20px;">
+                            <h4>Dra. Mónica Hinostroza Sheel</h4>
+                            <h5>Cirujano Dentista</h5>
+                            <br>
+                            <ul>
+                                <li>Criolipólisis</li>
+                                <li>Ondas de Choque</li>
+                                <li>Electroporación</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tarjetaBox">
+
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/Foto estudio 2022/fotoPerfil/jocelynC.jpg" alt="Jocelyn">
+
+                        <div class="tarjetText" style="padding: 20px;">
+                            <h4>Jocelyn Cuell Navarro</h4>
+                            <h5>Operadora</h5>
+                            <br>
+                            <ul>
+                                <li>Depilación Láser</li>
+                            
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="tarjetaBox">
+
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/Dra. Castillo.png" alt="Dra. Castillo">
+
+                        <div class="tarjetText" style="padding: 20px;">
+                            <h4>Dra Maria Belen Castillo Catalan</h4>
+                            <h5>Cirujano Dentista</h5>
+                            <br>
+                            <ul>
+                                <li>Estética Facial</li>
+                                <li>Odontologia General</li>
+                            </ul>
+                        </div>
+
+                </div>
+
+                <div class="tarjetaBox">
+                        
+                        <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/Foto estudio 2022/fotoPerfil/constazaFri.jpg" alt="Constanza Fritz">
+                        
+                        <div class="tarjetText" style="padding: 20px;">
+                            <h4>Constaza Fritz Cifuentes</h4>
+                            <h5>Tecnologo Medico</h5>
+                            <br>
+                            <ul>
+                                <li>Plasma Rico en Plaquetas</li>
+                            </ul>
+                        
+                        </div>
+
+                </div>
+
+                <h2>EQUIPO ADMINISTRATIVO</h2> 
+
+                <div class="tarjetaBox">
+
+                    <img src="" alt="Alejandra Lugo">
+
+                    <div class="tarjetText" style="padding: 20px;">
+                        
+                        <h4>Alejandra Lugo Bolivar</h4>
+                        <h5>Secretaria</h5>
+                        <br>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="tarjetaBox">
+
+                    <img src="" alt="Julio Lopez">
+
+                    <div class="tarjetText" style="padding: 20px;">
+                        
+                        <h4>Julio López Soto</h4>
+                        <h5>Administrativo</h5>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </div>
+        
+        </div>
+       
+        
+        
+            <a class="boton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento"><div  style="color: white;">Agenda Online</div></a>
+                
+
+        <div class="banerContainer">
+            <h2>NUESTRA CLÍNICA</h2>
+                
+                <div class="banerLayout">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban1.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban2.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban3.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban4.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban5.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban6.jpg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban7.jpeg" alt="baner">
+                    <img src="/Users/juliolopezsoto/Documents/web/drejuvenece/pics/banerCompuesto/ban8.jpg" alt="baner">
+                </div>
+            
+            <ul class="otrosTratamientosContainer">
+                <h4>Otros tratamientos</h4>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/acidoHialuronico/acidoHialuronico.html">Ácido Hialurónico</a></li>
+                <li><a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html">Criolipólisis</a></li>
+                <li><a href="">Depilación de Rebaje</a></li>
+                <li><a href="">Carillas</a></li>
+            </ul>
+            <iframe src="https://www.instagram.com/d.rejuvenece/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" style=" box-shadow: 0px 1px 10px rgba(0,0,0,0.2);"></iframe>
+        </div>
+
+     </div>
+
+    
+    <footer>
+        <div class="footer_container">
+
+            <img class="Logo_footer" src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/logo_BLANCO.png" alt="Logo Drejuvenece">
+            
+            <ul class="contact">
+                <h3 class="titulo"> CONTACTO</h3>
+                <li> Telefono/ whataspp: +569 9958 6889</li>
+                <li> Correo electrónico: drejuvenece@gmail.com</li>
+                <li> Dirección: javiera carrera  1655 - Temuco</li>
+            </ul>
+
+            <ul class="tratamientos">
+                <h3 class="titulo">TRATAMIENTOS FRECUENTES</h3>
+                
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><h4>ESTÉTICA DENTAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Carillas</li></a> 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Blanqueamiento</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/odonto/odonto.html"><li>Coronas</li></a>
+                 
+                <a href=""><h4>ESTÉTICA FACIAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/botox/botox.html"><li>Toxina Botulinica</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/acidoHialuronico/acidoHialuronico.html"><li>Ácido hilurónico</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/hilosTensores/hilosTensores.html"><li>Hilos tensores</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/mesoterapia/mesoterapia.html"><li>Mesoterapia</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaFacial/jatoplasma/jatoplasma.html"><li>Jato plasma</li></a>
+                 
+                <a href=""><h4>ESTÉTICA CORPORAL</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Electroporación</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/electroporacion/electroparacion.html"><li>Ondas de choque</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/esteticaCorporal/criolipolisis/criolipolisis.html"><li>Criolipolisis</li></a>
+                 
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><h4>DEPILACIÓN LÁSER</h4></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rostro</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Pierna</li></a>
+                <a href="/Users/juliolopezsoto/Documents/web/drejuvenece/Tratamientos/depiLaser/depiLaser.html"><li>Rebaje</li></a>
+            </ul>
+            
+            <ul class="RRSS">
+                <h3 class="titulo">RRSS</h3>
+                <a href="https://www.facebook.com/drejuvenece.tco">
+                    <li>Facebook</li> 
+                </a>
+                
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+
+                <a href="https://www.instagram.com/d.rejuvenece/">
+                    <li>instagram</li>
+                </a>
+                
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </ul>
+            <ul class="node">
+                <li>Desarrollado por</li>
+                <a href=""><img src="/Users/juliolopezsoto/Documents/web/drejuvenece/logos/Página 2.png" alt="node"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="flotanteBoton" href="https://64ec1997b100824f6ab2c54be24f48d66fd0f4b5.agenda.softwaredentalink.com/agendas/agendamiento">
+            
+        <span class="material-symbols-outlined">
+            view_agenda
+            </span>
+        <div class="contentBoton">AGENDA VIRTUAL</div>
+    </a>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+
+</html>
